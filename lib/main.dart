@@ -13,16 +13,18 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text('Hello World!'),
               Text('Bienvenue dans mon application Flutter'),
 
               Container(
                 margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: Colors.green,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Text(
                   'Boîte stylisée avec Container',
@@ -42,7 +44,7 @@ class MainApp extends StatelessWidget {
                   ),
                   Icon(Icons.star, size: 100, color: Colors.amber),
                   Text(
-                    "Superposé !",
+                    'Superposé !',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -66,11 +68,11 @@ class MainApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('Titre principal', style: TextStyle(fontSize: 24)),
+                  Text('Titre principal', style: TextStyle(fontSize: 26)),
                   SizedBox(height: 20),
                   Text(
                     'Sous-titre ou description',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 16),
                   ),
                   Icon(Icons.thumb_up, color: Colors.green, size: 40),
                 ],
